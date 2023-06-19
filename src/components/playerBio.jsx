@@ -17,7 +17,7 @@ const playerBio = ({playerData}) => {
       <p>
         <span style={boldBeforeColon}>Name:</span> {playerData.bio[0].name}
         <br />
-        <span style={boldBeforeColon}>Age:</span> {playerData.overviewPerGame[0].age}
+        <span style={boldBeforeColon}>Age:</span> {playerData.overviewPerGame[0].age} years old
         <br />
         <span style={boldBeforeColon}>Birthdate:</span> {updatedDate}
         <br />
@@ -25,17 +25,17 @@ const playerBio = ({playerData}) => {
         <br />
         <span style={boldBeforeColon}>Position:</span> {playerData.bio[0].position}
         <br />
-        <span style={boldBeforeColon}>Height:</span> {playerData.bio[0].height}
+        <span style={boldBeforeColon}>Height:</span> {playerData.bio[0].height} inches
         <br />
-        <span style={boldBeforeColon}>Weight:</span> {playerData.bio[0].weight}
+        <span style={boldBeforeColon}>Weight:</span> {playerData.bio[0].weight} lbs
         <br />
         <span style={boldBeforeColon}>Jersey Number:</span> {playerData.bio[0].jerseyNum}
         <br />
-        <span style={boldBeforeColon}>Years in League:</span> {playerData.bio[0].yearsPro}
+        <span style={boldBeforeColon}>Years in League:</span> {playerData.bio[0].yearsPro} years
         <br />
         <span style={boldBeforeColon}>Drafted Year:</span> {playerData.bio[0].draftYear}
         <br />
-        <span style={boldBeforeColon}>Picked in Draft:</span> Round {playerData.bio[0].round} Pick {playerData.bio[0].pick}
+        <span style={boldBeforeColon}>Selection in Draft:</span> Round {playerData.bio[0].round} Pick {playerData.bio[0].pick}
         <br />
         <span style={boldBeforeColon}>College:</span> {playerData.bio[0].dxCollege}
         <br />

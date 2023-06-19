@@ -19,6 +19,9 @@ const LineGraph = ({ data }) => {
         <option value="PTS">Points</option>
         <option value="AST">Assists</option>
         <option value="REB">Rebounds</option>
+        <option value="STL">Steals</option>
+        <option value="BLK">Blocks</option>
+        <option value="TOV">Turnovers</option>
         {/* Add more options for other values */}
       </select>
       <ResponsiveContainer width="100%" height={400}>

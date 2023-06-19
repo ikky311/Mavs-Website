@@ -38,7 +38,7 @@ const PlayerProfile = () => {
   }
 
   return (
-    <div style={{ marginTop: "75px", marginLeft: '150px', marginRight: '150px', backgroundColor: 'white'}}>
+    <div style={{ marginTop: "75px", marginLeft: '20px', marginRight: '20px', backgroundColor: 'white'}}>
       <Link to="/" style={{ textDecoration: 'none', fontSize: '18px' }}>
         &#8592; Return to Home Page
       </Link>
@@ -57,8 +57,14 @@ const PlayerProfile = () => {
             </div>
               {currentTab === 0 && (
                 <div style={{background: 'white'}}>
-                  <RadarChart measurementsData={playerData.measurements}/>       
-                  <SliderChart PlayerData={playerData} playerName={player.name} />
+                  <div className="charts-container">
+                    <div className="radar-chart-container">
+                      <RadarChart measurementsData={playerData.measurements} />
+                    </div>
+                    <div className="slider-chart-container">
+                      <SliderChart PlayerData={playerData} playerName={player.name} />
+                    </div>
+                  </div>
                   <LineGraph data={playerData.overviewPerGame}/>
                   <GameLogTable gameLog={playerData.gameLog} playerName={playerData.bio} />
                 </div>

@@ -23,7 +23,7 @@ const RoundedBlock = ({ teamData, stat, title }) => {
   }
 
   return (
-    <div style={{ width: '100%', maxWidth: '275px', margin: '0 auto', background: backgroundColor, padding: '3px', borderRadius: '16px', textAlign: 'center', marginBottom: '30px' }}>
+    <div style={{ width: '275px', maxWidth: '275px', margin: '0 auto', background: backgroundColor, padding: '3px', borderRadius: '16px', textAlign: 'center', marginBottom: '30px' }}>
       <span>
         <h3 style={{ fontSize: '24px', fontWeight: 'bold', margin: '5px' }}>
           {title}

@@ -64,7 +64,7 @@ function YourComponent({teamData}) {
 
   return (
     <div>
-      <div>
+      <div style={{marginLeft: '200px'}}>
         <label htmlFor="capFilter">Select Cap:</label>
         <select id="capFilter" value={selectedCap} onChange={handleCapChange}>
           <option value="capTotal">Total Cap Over Years</option>

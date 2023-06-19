@@ -78,25 +78,30 @@ const GameLogTable = ({ gameLog, playerName }) => {
         <Table>
           <TableHead>
             <TableRow>
-              <TableCell><b>Date</b></TableCell>
-              <TableCell><b>Team</b></TableCell>
-              <TableCell><b>Opponent</b></TableCell>
-              <TableCell><b>Minutes Played</b></TableCell>
-              <TableCell><b>Points</b></TableCell>
-              <TableCell><b>Rebounds</b></TableCell>
-              <TableCell><b>Assists</b></TableCell>
+              <TableCell align="center"><b>Date</b></TableCell>
+              <TableCell align="center"><b>Team</b></TableCell>
+              <TableCell align="center"><b>Opponent</b></TableCell>
+              <TableCell align="center"><b>Minutes Played</b></TableCell>
+              <TableCell align="center"><b>Points</b></TableCell>
+              <TableCell align="center"><b>Rebounds</b></TableCell>
+              <TableCell align="center"><b>Assists</b></TableCell>
+              <TableCell align="center"><b>Steals</b></TableCell>
+              <TableCell align="center"><b>Blocks</b></TableCell>
+              
             </TableRow>
           </TableHead>
           <TableBody>
             {slicedData.map((game) => (
               <TableRow key={game.gameId}>
-                <TableCell>{formatDate(game.date)}</TableCell>
-                <TableCell>{game.team}</TableCell>
-                <TableCell>{game.opponent}</TableCell>
-                <TableCell>{game.timePlayed}</TableCell>
-                <TableCell>{game.pts}</TableCell>
-                <TableCell>{game.reb}</TableCell>
-                <TableCell>{game.ast}</TableCell>
+                <TableCell align="center">{formatDate(game.date)}</TableCell>
+                <TableCell align="center">{game.team}</TableCell>
+                <TableCell align="center">{game.opponent}</TableCell>
+                <TableCell align="center">{game.timePlayed}</TableCell>
+                <TableCell align="center">{game.pts}</TableCell>
+                <TableCell align="center">{game.reb}</TableCell>
+                <TableCell align="center">{game.ast}</TableCell>
+                <TableCell align="center">{game.stl}</TableCell>
+                <TableCell align="center">{game.blk}</TableCell>
               </TableRow>
             ))}
           </TableBody>
