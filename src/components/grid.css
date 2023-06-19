@@ -1,0 +1,32 @@
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px; /* width of grid */
+    margin: -500px auto 60px; /* Moving grid up or down and the 10px is the bottom margin*/
+    border: 1px solid #000000; /* color of border */
+    padding: 10px; /* spacing */
+    height: 450px;
+    margin-left: 900px; /* How far it is moving left */
+  }
+
+  .grid-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .grid-item {
+    width: calc(20% - 5px); /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    margin: 10px;
+  }
+
+  .RadarChart{
+    display: flex;
+    justify-content: flex-start;
+  }
+
+.wider-table {
+  width: 100%; /* Adjust the width value as needed */
+}
