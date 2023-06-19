@@ -56,8 +56,8 @@ const Radarplot = ({ measurementsData }) => {
 
 
   return (
-    <div style={{ marginTop: "-540px", marginLeft: "300px" }}>
-      <h3 style={{marginLeft: "140px" }}>{measurementsData[0].name} vs. Average {measurementsData[0].position} in the NBA</h3>
+    <div style={{ marginTop: "-540px", marginLeft: "250px" }}>
+      <h3 style={{marginLeft: "120px" }}>{measurementsData[0].name} vs. Average {measurementsData[0].position} in the NBA</h3>
       <ResponsiveContainer width= "50%" height={500}>
         <RadarChart cx="50%" cy="50%" outerRadius="90%" data={data} >
           <PolarGrid />
