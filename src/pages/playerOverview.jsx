@@ -53,7 +53,7 @@ const PlayerProfile = () => {
   };
 
   return (
-    <div style={{ marginTop: "75px", marginLeft: '150px', marginRight: '150px'}}>
+    <div style={{ marginTop: "75px", marginLeft: '150px', marginRight: '150px', backgroundColor: 'white'}}>
       <Link to="/" style={{ textDecoration: 'none', fontSize: '18px' }}>
         &#8592; Return to Home Page
       </Link>
