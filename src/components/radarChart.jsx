@@ -52,9 +52,6 @@ const Radarplot = ({ measurementsData }) => {
         datapoint2: 188,
     },
   ];
-
-
-
   return (
     <div style={{ marginTop: "-540px", marginLeft: "250px" }}>
       <h3 style={{marginLeft: "120px" }}>{measurementsData[0].name} vs. Average {measurementsData[0].position} in the NBA</h3>
