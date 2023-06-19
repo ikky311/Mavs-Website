@@ -1,7 +1,6 @@
 import React from 'react'
-import playerData from '../data/oladipo.json'
 
-const playerBio = () => {
+const playerBio = ({playerData}) => {
     const formattedDate = new Date(playerData.bio[0].birthDate).toLocaleDateString();
     const originalDate = new Date(formattedDate);
     originalDate.setDate(originalDate.getDate() + 1);

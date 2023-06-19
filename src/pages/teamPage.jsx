@@ -14,7 +14,7 @@ const teamPage = () => {
 
   return (
     <div style={ {backgroundColor: 'white'}}>
-      <body style={{ marginTop: "75px", marginLeft: '150px', marginRight: '150px', display: "flex", flexDirection: "column"}}>
+      <div style={{ marginTop: "75px", marginLeft: '150px', marginRight: '150px', display: "flex", flexDirection: "column"}}>
         <h1 style={{ textAlign: "center", marginBottom: "30px" }}>{formattedTitle} 2022-2023 Roster</h1>
         <Grid container spacing={1}> 
           <Grid item xs={5} sm={5} md={5} lg={3}> 
@@ -55,7 +55,7 @@ const teamPage = () => {
           <PieChart teamData={teamData} />
           <CollapsibleTable/>
         </span>
-      </body>
+      </div>
     </div>
   );
 };

@@ -3,7 +3,7 @@ import ScoutCollapsible from '../components/scoutCollapsible'
 
 const PlayerScout = ({PlayerData}) => {
     return (
-        <div>
+        <div style={{marginTop: '-600px'}}>
           <h2>Scouting Reports</h2>
           <ScoutCollapsible initialReports={PlayerData} />
         </div>

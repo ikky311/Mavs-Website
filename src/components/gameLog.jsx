@@ -78,13 +78,13 @@ const GameLogTable = ({ gameLog, playerName }) => {
         <Table>
           <TableHead>
             <TableRow>
-              <TableCell>Date</TableCell>
-              <TableCell>Team</TableCell>
-              <TableCell>Opponent</TableCell>
-              <TableCell>Minutes Played</TableCell>
-              <TableCell>Points</TableCell>
-              <TableCell>Rebounds</TableCell>
-              <TableCell>Assists</TableCell>
+              <TableCell><b>Date</b></TableCell>
+              <TableCell><b>Team</b></TableCell>
+              <TableCell><b>Opponent</b></TableCell>
+              <TableCell><b>Minutes Played</b></TableCell>
+              <TableCell><b>Points</b></TableCell>
+              <TableCell><b>Rebounds</b></TableCell>
+              <TableCell><b>Assists</b></TableCell>
             </TableRow>
           </TableHead>
           <TableBody>

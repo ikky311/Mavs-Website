@@ -17,6 +17,15 @@
   }
 }
 
+.player-bio-container {
+  flex: 1;
+}
+
+.player-features-container {
+  display: flex;
+  margin-left: 350px;
+}
+
 
   .grid-row {
     display: flex;

@@ -95,7 +95,7 @@ const TeamStats = ({teamData}) => {
           direction={sortBy === property ? sortDirection : "asc"}
           onClick={() => handleSort(property)}
         >
-          {label}
+         <b>{label}</b>
         </TableSortLabel>
       </TableCell>
     );

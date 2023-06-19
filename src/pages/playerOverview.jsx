@@ -10,6 +10,7 @@ import "../components/grid.css"
 import PlayerBio from '../components/playerBio';
 import playerData from '../data/oladipo.json';
 import LineGraph from '../components/lineGraph';
+import SalaryInfo from '../components/salaryInfo';
 
 const PlayerProfile = () => {
   const { nbaId } = useParams();
@@ -50,32 +51,38 @@ const PlayerProfile = () => {
             <Tab label="Salary" />
             <Tab label="Scouting" />
           </Tabs>
-          <PlayerBio />
-          <div className="charts-container">
-            {currentTab === 0 && (
-              <div>
-                <RadarChart measurementsData={playerData.measurements}/>       
-                <SliderChart PlayerData={playerData} playerName={player.name} />
-                <LineGraph data={playerData.overviewPerGame}/>
-                <GameLogTable gameLog={playerData.gameLog} playerName={playerData.bio} />
-              </div>
-            )}
-            {currentTab === 1 && (
-              <div>
-                <h3>Salary Information</h3>
-                <SalaryTable/>
-              </div>
-            )}
-            {currentTab === 2 && (
-              <div>
-                <PlayerScout PlayerData={playerData}/>
-              </div>
-            )}
-          </div>
+          <div className="player-info-container">
+            <div className="player-bio-container">
+              <PlayerBio playerData={playerData}/>
+            </div>
+              {currentTab === 0 && (
+                <div>
+                  <RadarChart measurementsData={playerData.measurements}/>       
+                  <SliderChart PlayerData={playerData} playerName={player.name} />
+                  <LineGraph data={playerData.overviewPerGame}/>
+                  <GameLogTable gameLog={playerData.gameLog} playerName={playerData.bio} />
+                </div>
+              )}
+              {currentTab === 1 && (
+                <div className="player-features-container">
+                  <div style={{marginTop: '-600px'}}>
+                    <h2>Salary Information</h2>
+                    <SalaryInfo />
+                    <SalaryTable/>
+                  </div>
+                </div>
+              )}
+              {currentTab === 2 && (
+                <div className="player-features-container">
+                  <PlayerScout PlayerData={playerData}/>
+                </div>
+              )}
+            </div>
+          
         </div>
       )}
     </div>
-  );
+  );  
 };
 
 export default PlayerProfile;

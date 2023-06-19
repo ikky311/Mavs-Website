@@ -28,7 +28,7 @@ const RoundedBlock = ({ teamData, stat, title }) => {
         <h3 style={{ fontSize: '24px', fontWeight: 'bold', margin: '5px' }}>
           {title}
         </h3>
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', color: 'black' }}>
           <div style={{ marginRight: '60px' }}>
             <span style={{ fontSize: '18px' }}>Rank</span>
             <br />

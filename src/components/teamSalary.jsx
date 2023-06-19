@@ -75,13 +75,13 @@ const MaterialUITable = () => {
       <Table size="small">
         <TableHead>
           <TableRow>
-            <TableCell>Position</TableCell>
-            <TableCell>2022-2023</TableCell>
-            <TableCell>2023-2024</TableCell>
-            <TableCell>2024-2025</TableCell>
-            <TableCell>2025-2026</TableCell>
-            <TableCell>2026-2027</TableCell>
-            <TableCell>2027-2028</TableCell>
+            <TableCell><b> Position </b></TableCell>
+            <TableCell><b>2022-2023</b></TableCell>
+            <TableCell><b>2023-2024</b></TableCell>
+            <TableCell><b>2024-2025</b></TableCell>
+            <TableCell><b>2025-2026</b></TableCell>
+            <TableCell><b>2026-2027</b></TableCell>
+            <TableCell><b>2027-2028</b></TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
