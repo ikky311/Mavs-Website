@@ -87,25 +87,25 @@ const ScoutCollapsible = ({ initialReports }) => {
 
   return (
     <div>
+      <div>
+        <input type="text" value={newScout} onChange={handleScoutChange} placeholder="Enter Your Name" style={{width: '490px', height: '50px', fontSize: '18px', marginBottom: '10px', marginRight: '10px', borderWidth: 1, borderColor: "black"}}  />
+        <input type="text" value={newGame} onChange={handleGameChange} placeholder="Enter Event" style={{width: '490px', height: '50px', fontSize: '18px', borderWidth: 1, borderColor: "black"}}/>
+        <br />
+        <textarea rows="5" cols="50" value={newReport} onChange={handleInputChange} placeholder="Write Report Here" style={{width: '1000px', height: '250px', fontSize: '20px', borderWidth: 1, borderColor: "black"}}/>
+        <br />
+        <button onClick={handleAddReport} style={{fontSize: '20px', borderWidth: 1, borderColor: "black", marginBottom: '20px'}}>{editIndex !== null ? 'Update Report' : 'Add Report'}</button>
+      </div>
+
       {formattedReports.map((component, index) => (
         <div key={component.id}>
-          <button onClick={() => handleClick(Math.abs(collapsibleComponents.length - 1 - component.index))} style={{ width: '1200px', marginBottom: '10px', marginRight: '10px', borderWidth: 2, borderColor: "black"}} >
+          <button onClick={() => handleClick(Math.abs(collapsibleComponents.length - 1 - component.index))} style={{ width: '900px', marginBottom: '10px', marginTop: '10px', marginRight: '10px', borderWidth: 2, borderColor: "black"}} >
             {component.date} Report Written By {component.scout} at {component.event}
           </button>
-          <button onClick={() => handleEditReport(index)}  style={{ borderWidth: 2, borderColor: "black"}}>Edit</button>
+          <button onClick={() => handleEditReport(index)}  style={{ width: '100px',borderWidth: 2, borderColor: "black"}}>Edit</button>
           {component.active && <div>{component.report}</div>}
           {editIndex === index && <button onClick={() => handleDeleteReport(index)} style={{ borderWidth: 2, borderColor: "black", marginBottom: '10px'}}>Delete</button>}
         </div>
       ))}
-
-      <div>
-        <input type="text" value={newScout} onChange={handleScoutChange} placeholder="Enter Your Name" style={{width: '625px', height: '50px', fontSize: '18px', marginBottom: '10px', marginRight: '10px', borderWidth: 1, borderColor: "black"}}  />
-        <input type="text" value={newGame} onChange={handleGameChange} placeholder="Enter Event" style={{width: '625px', height: '50px', fontSize: '18px', borderWidth: 1, borderColor: "black"}}/>
-        <br />
-        <textarea rows="5" cols="50" value={newReport} onChange={handleInputChange} placeholder="Write Report Here" style={{width: '1275px', height: '250px', fontSize: '20px', borderWidth: 1, borderColor: "black"}}/>
-        <br />
-        <button onClick={handleAddReport} style={{fontSize: '20px', borderWidth: 1, borderColor: "black", marginBottom: '100px'}}>{editIndex !== null ? 'Update Report' : 'Add Report'}</button>
-      </div>
     </div>
   );
 };

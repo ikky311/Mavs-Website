@@ -53,7 +53,7 @@ const PlayerProfile = () => {
   };
 
   return (
-    <div style={{ marginTop: "75px", marginLeft: "75px"}}>
+    <div style={{ marginTop: "75px", marginLeft: '150px', marginRight: '150px'}}>
       <Link to="/" style={{ textDecoration: 'none', fontSize: '18px' }}>
         &#8592; Return to Home Page
       </Link>
@@ -83,7 +83,6 @@ const PlayerProfile = () => {
           )}
           {currentTab === 2 && (
             <div style={scoutingStyle}>
-              {/* Additional content for the Salary tab */}
               <PlayerScout PlayerData={playerData}/>
             </div>
           )}

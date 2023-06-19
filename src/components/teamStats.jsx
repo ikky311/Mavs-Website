@@ -52,23 +52,24 @@ const TeamStats = ({teamData}) => {
   const renderTableRows = () => {
     return combinedData.map((list) => {
       if (list.unit === null || isNaN(list.unit)) {
-        return null; // Skip rendering the row when unit is null
+        return null; 
       }
 
   const formatMoneyValue = (value) => {
     return value.toLocaleString(undefined, {
       style: "currency",
       currency: "USD",
+      maximumFractionDigits: 0,
     });
   };
   
       return (
           <TableRow key={list.nbaId}>
             <TableCell align="center">
-              <Avatar alt={list.name} src={list.photoUrl} /> {/* Add the Avatar component with the player's photo */}
+              <Avatar alt={list.name} src={list.photoUrl} /> 
             </TableCell>
             <TableCell align="center">
-            <Link to={`/players/${list.nbaId}`}>{list.name}</Link> {/* Add the Link component with the player's profile path */}
+            <Link to={`/players/${list.nbaId}`}>{list.name}</Link> 
           </TableCell>
             <TableCell align="center">{list.age}</TableCell>
             <TableCell align="center">{list.position}</TableCell>

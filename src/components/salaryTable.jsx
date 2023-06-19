@@ -7,6 +7,7 @@ const SalaryTable = () => {
     return value.toLocaleString(undefined, {
       style: "currency",
       currency: "USD",
+      maximumFractionDigits: 0,
     });
   };
 
@@ -18,7 +19,7 @@ const SalaryTable = () => {
         </Typography>
 
         <TableContainer component={Paper}>
-          <Table style={{ width: '700px' }}> {/* Set the desired width for the table */}
+          <Table style={{ width: '700px' }}> 
             <TableHead>
               <TableRow>
                 <TableCell align="center">Salary Year</TableCell>

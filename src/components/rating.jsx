@@ -24,7 +24,7 @@ const RoundedBlock = ({ teamData, stat, title }) => {
 
   return (
     <div style={{ width: '100%', maxWidth: '275px', margin: '0 auto', background: backgroundColor, padding: '3px', borderRadius: '16px', textAlign: 'center', marginBottom: '30px' }}>
-      <span style={{ display: 'inline-block' }}>
+      <span>
         <h3 style={{ fontSize: '24px', fontWeight: 'bold', margin: '5px' }}>
           {title}
         </h3>
