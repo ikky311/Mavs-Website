@@ -24,6 +24,7 @@
 .player-features-container {
   display: flex;
   margin-left: 350px;
+  margin-top: -600px;
 }
 
 
@@ -43,8 +44,3 @@
     display: flex;
     justify-content: flex-start;
   }
-
-
-.wider-table {
-  width: 100%; /* Adjust the width value as needed */
-}

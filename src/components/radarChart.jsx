@@ -53,15 +53,15 @@ const Radarplot = ({ measurementsData }) => {
     },
   ];
   return (
-    <div style={{ marginTop: "-540px", marginLeft: "250px" }}>
-      <h3 style={{marginLeft: "120px" }}>{measurementsData[0].name} vs. Average {measurementsData[0].position} in the NBA</h3>
+    <div style={{ marginTop: "-550px", marginLeft: "200px" }}>
+      <h3 style={{ marginTop: "-550px", marginLeft: "175px" }}>{measurementsData[0].name} vs. Average {measurementsData[0].position}</h3>
       <ResponsiveContainer width= "50%" height={500}>
         <RadarChart cx="50%" cy="50%" outerRadius="90%" data={data} >
           <PolarGrid />
           <PolarAngleAxis dataKey="subject" />
           <PolarRadiusAxis angle={30} domain={[0, 100]} />
           <Radar name={measurementsData[0].name} dataKey="data1" stroke="#8884d8" fill="#bdddff" fillOpacity={0.2} />
-          <Radar name={`Average ${measurementsData[0].position} in the NBA`} dataKey="data2" stroke="#82ca9d" fill="#ddfade" fillOpacity={0.2} />
+          <Radar name={`Average ${measurementsData[0].position} in NBA`} dataKey="data2" stroke="#82ca9d" fill="#ddfade" fillOpacity={0.2} />
           <Legend wrapperStyle={{ position: "absolute", top: "95%", left: "50%", transform: "translate(-50%, -50%)",}} />
           <Tooltip content={<CustomTooltip playerName={measurementsData[0].name} playerPos={measurementsData[0].position} />} />
         </RadarChart>

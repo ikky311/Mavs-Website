@@ -56,7 +56,7 @@ const PlayerProfile = () => {
               <PlayerBio playerData={playerData}/>
             </div>
               {currentTab === 0 && (
-                <div>
+                <div style={{background: 'white'}}>
                   <RadarChart measurementsData={playerData.measurements}/>       
                   <SliderChart PlayerData={playerData} playerName={player.name} />
                   <LineGraph data={playerData.overviewPerGame}/>
@@ -65,7 +65,7 @@ const PlayerProfile = () => {
               )}
               {currentTab === 1 && (
                 <div className="player-features-container">
-                  <div style={{marginTop: '-600px'}}>
+                  <div >
                     <h2>Salary Information</h2>
                     <SalaryInfo />
                     <SalaryTable/>

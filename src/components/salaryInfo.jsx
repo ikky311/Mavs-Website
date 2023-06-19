@@ -20,8 +20,6 @@ const SalaryInfo = () => {
         
     const player = teamData.salaries.find((item) => item.name === playerData.bio[0].name);
 
-    console.log(player.name)
-
   return (
     <Grid container spacing={2} style={{ marginBottom: '20px' }}>
         <Grid item xs={5} sm={5} md={5} lg={3} style={{alignItems: 'center'}}> 

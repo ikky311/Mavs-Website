@@ -9,10 +9,11 @@ const playerBio = ({playerData}) => {
 
     const boldBeforeColon = {
         fontWeight: 'bold',
+        color: 'black'
       };
 
   return (
-    <span style={{width: 'auto'}}>
+    <span>
       <p>
         <span style={boldBeforeColon}>Name:</span> {playerData.bio[0].name}
         <br />
